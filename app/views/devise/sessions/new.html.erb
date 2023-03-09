@@ -1,0 +1,9 @@
+<%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
+    <h1 class='form-header-text'>
+      管理者情報入力
+    </h1>
+    <%= f.email_field :email, class:"", id:"", placeholder:"メールアドレス", autofocus: true %>
+    <%= f.password_field :password, class:"", id:"", placeholder:"パスワード" %>
+    <%= f.submit "ログイン" ,class:"" %>
+<% end %>
+

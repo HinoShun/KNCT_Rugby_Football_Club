@@ -1,0 +1,11 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <h1 class=''>
+      管理者情報登録
+    </h1>
+    <%= f.text_area :name, class:"", id:"", placeholder:"管理者名" %>
+    <%= f.email_field :email, class:"i", id:"", placeholder:"管理者宛メールを受け取るメールアドレス", autofocus: true %>
+    <%= f.password_field :password, class:"", id:"", placeholder:"6文字以上の半角英数字（バリデーション未設定）" %>
+    <%= f.password_field :password_confirmation, class:"", id:"", placeholder:"同じパスワードを入力" %>
+    <%= f.submit "登録" ,class:"" %>
+<% end %>
+
