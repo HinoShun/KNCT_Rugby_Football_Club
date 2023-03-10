@@ -17,10 +17,11 @@
 
 ## articles テーブル
 
-| Column  | Type   | Options     |
-| ------- | ------ | ----------- |
-| title   | string | null: false |
-| content | text   | null: false |
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| title   | string     | null: false                    |
+| content | text       | null: false                    |
+| user    | references | null: false, foreign_key: true |
 
 ### Association
 
