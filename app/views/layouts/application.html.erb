@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KNCTRugbyFootballClub</title>
+    <title>KRFC</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <header>
+    <!-- ヘッダー上部 -->
+    <div class="uppper">
+
+      <div class="header_left">
+        <div class="title">
+          <div class="logo"></div>
+          <div class="title">KRFC</div>
+        </div>
+      </div>
+      <div class="header_right">
+        <div class="header_buttons">
+          <% if user_signed_in? %>
+            <%= link_to "記事投稿", new_article_path, class: :header_button %>
+            <div class="header_button">記事投稿</div>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :header_button %>
+          <% else %>
+            <%= link_to "ログイン", new_user_session_path, class: :header_button %>
+            <%= link_to "新規登録", new_user_registration_path, class: :header_button %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <!-- ヘッダー下部 -->
+    <div class="menu">
+    </div>
+  </header>
 
   <body>
     <%= yield %>
   </body>
+  <footer>
+  </footer>
 </html>
