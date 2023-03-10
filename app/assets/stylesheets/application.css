@@ -1,0 +1,69 @@
+/******* リセット *******/
+
+/******* ヘッダー装飾 *******/
+
+.header{
+}
+
+.uppper{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgreen;
+}
+
+.header_left{
+  background-color: seagreen;
+}
+
+.title{
+  display: flex;
+  background-color: aliceblue;
+  margin-left: 50px;
+}
+
+.logo{}
+
+.title_title{}
+
+.header_right{
+  background-color: antiquewhite;
+}
+
+.header_buttons{
+  background-color: chartreuse;
+  margin: 50px 30px;
+}
+
+.header_button{
+  background-color: darkgreen;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/******* ヘッダー・メニュー装飾 *******/
+
+.header_menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color:teal;
+}
+
+.menu{
+  background-color:teal;
+  margin-right: 20px;
+}
+
+.menu_buttons{
+}
+
+.menu_button{
+  background-color: bisque;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
