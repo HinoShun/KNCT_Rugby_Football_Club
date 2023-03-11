@@ -1,4 +1,9 @@
 <div class="main">
   <div class="articles">
+    <% @articles.each do |article| %>
+      <%= image_tag article.image, class: 'article-image' %>
+      <%= article.title %>
+      <%= article.content %>
+    <% end %>
   </div>
 </div>
