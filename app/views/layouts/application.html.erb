@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KRFC</title>
+    <title>KRFC --β--</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -35,9 +35,9 @@
       <div class="menu">menu:</div>
       <div class="menu_buttons">
         <%= link_to "TOP", root_path, class: :menu_button %>
-        <%= link_to "公式戦結果", root_path, class: :menu_button %>
-        <%= link_to "記事", root_path, class: :menu_button %>
-        <%= link_to "会員メニュー（PDmenu → 部報・部歌・スタッフ）", root_path, class: :menu_button %>
+        <%= link_to "記事", pages_articles_path, class: :menu_button %>
+        <%= link_to "公式戦結果", pages_result_path , class: :menu_button %>
+        <%= link_to "会員メニュー（PDmenu → 部報・部歌・スタッフ）", pages_member_path, class: :menu_button %>
         <%= link_to "管理者へメール", root_path, class: :menu_button %>
         <%= link_to "リンク（PDmenu → ？）", root_path, class: :menu_button %>
       </div>
