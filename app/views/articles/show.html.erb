@@ -10,6 +10,8 @@
     </div>
   <% end %>
 
+  <%= render partial: "comment", collection: @comments  %>
+
   <div class="comment-form">
     <%= form_with(model: [@article, @comment], local: true) do |f|%>
      <div class="">
