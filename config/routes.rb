@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:index, :new, :create, :show] do
     resources :comments, only: [:new, :create]
   end
+  get 'pages/articles'
+  get 'pages/result'
+  get 'pages/member'
 end

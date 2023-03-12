@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.all
+    @articles = Article.order("id DESC").limit(3)
   end
 
   def new
