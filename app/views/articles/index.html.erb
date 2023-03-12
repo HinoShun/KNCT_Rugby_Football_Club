@@ -1,7 +1,9 @@
-<div class="main">
-  <div class="articles">
-    <%= render partial: "article", collection: @articles  %>
+<div class="main_index">
+  <div class="contents">
+    <div class="articles">
+      <%= render partial: "article", collection: @articles  %>
+    </div>
+    <%= render template: "pages/result" %>
+    <%= render template: "pages/member" %>
   </div>
-  <%= render template: "pages/result" %>
-  <%= render template: "pages/member" %>
 </div>

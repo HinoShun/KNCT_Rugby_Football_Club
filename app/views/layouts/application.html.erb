@@ -15,7 +15,7 @@
       <div class="header_left">
         <div class="title">
           <%= link_to image_tag("rugby_rogo.jpeg", class: :logo), root_path %>
-          <div class="title_title">KRFC</div>
+          <div class="title_title">K.R.F.C.</div>
         </div>
       </div>
       <div class="header_right">
@@ -37,15 +37,18 @@
         <%= link_to "TOP", root_path, class: :menu_button %>
         <%= link_to "記事", pages_articles_path, class: :menu_button %>
         <%= link_to "公式戦結果", pages_result_path , class: :menu_button %>
-        <%= link_to "会員メニュー（PDmenu → 部報・部歌・スタッフ）", pages_member_path, class: :menu_button %>
+        <%= link_to "会員メニュー", pages_member_path, class: :menu_button %>
         <%= link_to "管理者へメール", root_path, class: :menu_button %>
-        <%= link_to "リンク（PDmenu → ？）", root_path, class: :menu_button %>
+        <%= link_to "リンク", root_path, class: :menu_button %>
       </div>
     </div>
   </header>
 
   <body>
-    <%= yield %>
+      <div class="main">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 
   <footer>
