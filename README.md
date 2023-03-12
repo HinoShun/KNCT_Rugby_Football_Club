@@ -29,11 +29,12 @@
 
 ## comments テーブル
 
-| Column  | Type    | Options     |
-| ------- | ------- | ----------- |
-| class   | integer |             |
-| name    | string  | null: false |
-| comment | text    | null: false |
+| Column           | Type                   | Options                        |
+| ---------------- | ---------------------- | ------------------------------ |
+| graduating_class | integer                |                                |
+| name             | string                 | null: false                    |
+| message          | text                   | null: false                    |
+| article          | references null: false | null: false, foreign_key: true |
 
 
 ### Association

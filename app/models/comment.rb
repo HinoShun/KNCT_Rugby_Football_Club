@@ -3,7 +3,7 @@ class Comment < ApplicationRecord
 
   with_options presence: true do
     validates :name
-    validates :comment
+    validates :message
   end
 
 end
