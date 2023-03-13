@@ -12,6 +12,7 @@
   align-items: center;
   background-color: darkgreen;
   border-bottom: solid 2px red;
+  background: linear-gradient(-225deg, darkgreen 0%, white 95%);
 }
 
 .header_left{
@@ -84,29 +85,47 @@ a{
   text-decoration: none;
 }
 
+/******* フッター装飾 *******/
+footer{
+  height: 80px;
+  width: 100vw;
+  background-color: darkgreen;
+  background: linear-gradient(-225deg, white 0%, darkgreen 95%);
+  border-top: solid 1px red;
+  color: #e8efe6;
+  padding-top: 20px;
+  
+}
+
+.footer_text{
+  margin-right: 80px;
+  text-align: right;
+}
+
+
 /******* メイン装飾 *******/
 
 .main{
-  height: calc(100vh - 80px);
   width: 100vw;
-  background-image: url('circle.png');
+  background-image: url('ground_beside.png');
   background-size: 100%;
+  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .main_index{
   background-color: rgba(249, 251, 249, 0.8);
   width: 100vw;
-  height: 100vh;
 }
 
 .contents{
-  
+  padding-bottom: 100px;
 }
 
 /******* article_index装飾 *******/
 
 .articles{
-  height: 500px;
+  height: 400px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -140,12 +159,12 @@ a{
 
 /******* result装飾 *******/
 .result{
-  margin-top: 0;
+  margin: 100px auto 0 80px;
 }
 
 
 
 /******* member装飾 *******/
 .member{
-  
+  margin: 100px auto 0 80px;
 }
