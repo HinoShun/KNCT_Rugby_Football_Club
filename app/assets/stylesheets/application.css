@@ -61,7 +61,7 @@
 .menu{
   background-color:black;
   margin-right: 20px;
-  color: bisque;
+  color: rgb(242, 245, 242);
 }
 
 .menu_buttons{
@@ -71,9 +71,9 @@
 .menu_button{
   padding: 5px;
   text-align: center;
-  border: 1px solid bisque;
+  border: 1px;
   border-radius: 5px;
-  background-color: antiquewhite;
+  background-color: #e8efe6;
   display: block;
   width: 120px;
   margin: auto 3px;
@@ -89,22 +89,24 @@ a{
 .main{
   height: calc(100vh - 80px);
   width: 100vw;
+  background-image: url('circle.png');
+  background-size: 100%;
 }
 
 .main_index{
-  background-image: url('circle.png');
-  background-size: 100%;
+  background-color: rgba(249, 251, 249, 0.8);
   width: 100vw;
   height: 100vh;
 }
 
 .contents{
-  background-color: rgba(255, 255, 255, 0.8);
+  
 }
 
 /******* article_index装飾 *******/
 
 .articles{
+  height: 500px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -126,8 +128,24 @@ a{
 .article_title{
   display: block;
   text-align: center;
+  font-size: large;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 .article_posted{
-  text-align: right;
+  text-align: center;
+  font-size: small;
+}
+
+/******* result装飾 *******/
+.result{
+  margin-top: 0;
+}
+
+
+
+/******* member装飾 *******/
+.member{
+  
 }
