@@ -2,3 +2,5 @@
   <%= comment.graduating_class %>
   <%= comment.name %>
   <%= comment.message %>
+  <%= link_to "削除する", article_comment_path(@article,comment), method: :delete, class: :delete_btn %>
+

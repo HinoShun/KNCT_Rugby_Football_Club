@@ -168,3 +168,11 @@ footer{
 .member{
   margin: 100px auto 0 80px;
 }
+
+
+
+
+/******* member装飾 *******/
+.delete_btn{
+  color: #e8efe6;
+}
