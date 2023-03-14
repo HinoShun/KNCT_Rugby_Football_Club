@@ -157,6 +157,12 @@ footer{
   font-size: small;
 }
 
+.comments_count{
+  text-align: center;
+  font-size: small;
+}
+
+
 /******* result装飾 *******/
 .result{
   margin: 100px auto 0 80px;
