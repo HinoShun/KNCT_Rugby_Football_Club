@@ -109,16 +109,19 @@ footer{
 /******* メイン装飾 *******/
 
 .main{
+  height: 1950px;
   width: 100vw;
   background-image: url('ground_vertical.png');
   background-size: 100%;
+  background-repeat: no-repeat;
   overflow-y: scroll;
   overflow: hidden;
 }
 
-.main_index{
+.main_{
   background-color: rgba(249, 251, 249, 0.8);
   width: 100vw;
+  height: 100%;
 }
 
 .contents{
@@ -130,7 +133,7 @@ footer{
 
 .page{
   margin: 0 auto 0 80px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .page_title{
@@ -155,10 +158,11 @@ footer{
 /******* article_index装飾 *******/
 
 .articles{
-  height: 400px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
 }
 
 .article{
@@ -199,7 +203,12 @@ footer{
 /******* result装飾 *******/
 
 
+
 /******* member装飾 *******/
+.staff{
+  line-height:20px;
+}
+
 .song{
   display: block;
   object-fit: cover;
@@ -218,7 +227,6 @@ footer{
 /******* letter装飾 *******/
 
 .letters{
-  height: 1800px;
   flex-wrap: wrap;
   display: flex;
 }
