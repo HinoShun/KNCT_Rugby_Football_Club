@@ -120,6 +120,7 @@ footer{
 
 .contents{
   padding-bottom: 100px;
+  margin-bottom: 0;
 }
 
 /******* article_index装飾 *******/
@@ -165,14 +166,16 @@ footer{
 
 /******* result装飾 *******/
 .result{
-  margin: 100px auto 0 80px;
+  margin: 0 auto 0 80px;
+  padding-top: 100px;
 }
 
 
 
 /******* member装飾 *******/
 .member{
-  margin: 100px auto 0 80px;
+  margin: 0 auto 0 80px;
+  padding-top: 100px;
 }
 
 
