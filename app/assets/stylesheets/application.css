@@ -86,6 +86,7 @@ a{
 }
 
 /******* フッター装飾 *******/
+
 footer{
   height: 80px;
   width: 100vw;
@@ -107,7 +108,7 @@ footer{
 
 .main{
   width: 100vw;
-  background-image: url('ground_beside.png');
+  background-image: url('ground_vertical.png');
   background-size: 100%;
   overflow-y: scroll;
   overflow: hidden;
@@ -121,6 +122,32 @@ footer{
 .contents{
   padding-bottom: 100px;
   margin-bottom: 0;
+}
+
+/******* 各ページ装飾 *******/
+
+.page{
+  margin: 0 auto 0 80px;
+  padding-top: 100px;
+}
+
+.page_title{
+  font-size: large;
+  font-weight: 600;
+}
+
+.page_contents{
+  padding: 20px;
+}
+
+.page_content_title{
+  padding: 5px;
+}
+
+.page_content{
+  margin-left: 30px;
+  padding: 5px;
+  font-size: 14px;
 }
 
 /******* article_index装飾 *******/
@@ -163,25 +190,25 @@ footer{
   font-size: small;
 }
 
-
-/******* result装飾 *******/
-.result{
-  margin: 0 auto 0 80px;
-  padding-top: 100px;
-}
-
-
-
-/******* member装飾 *******/
-.member{
-  margin: 0 auto 0 80px;
-  padding-top: 100px;
-}
-
-
-
-
-/******* member装飾 *******/
 .delete_btn{
   color: #e8efe6;
+}
+
+/******* result装飾 *******/
+
+
+/******* member装飾 *******/
+.song{
+  display: block;
+  object-fit: cover;
+  filter: contrast(200%);
+  border-radius: 10px;
+}
+
+.info{
+  font-size: small;
+}
+
+.link{
+  color: darkgreen;
 }

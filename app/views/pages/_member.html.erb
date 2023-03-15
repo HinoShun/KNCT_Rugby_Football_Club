@@ -1,7 +1,25 @@
-<div class="member">
-    <div>会員ページ</div>
-    <div class="song">部歌</div>
-    <div class="">主な戦績</div>
-    <div class="">令和5年度スタッフ</div>
-    <div class="">部報リンク（認証パスワードは会員にメール配信しております）</div>
+<div class="page">
+  <div class="page_title">会員ページ</div>
+  
+  <div class="page_contents">
+    <div class="page_content_title">
+      <%= link_to "部報リンク", pages_news_letter_path, class: :link %>
+      <a class="info">（認証パスワードは別途メール配信）</a>
+    </div>
+    <div class="page_content_title">主な戦績
+      <div class="page_content">
+        <%= render 'pages/main_results' %>
+      </div>
+    </div>
+    <div class="page_content_title">令和5年度スタッフ
+      <div class="page_content">
+        <%= render 'pages/staff' %>
+      </div>
+    </div>
+    <div class="page_content_title">部歌
+      <div class="page_content">
+        <%= image_tag("song.png", class: :song, size: "1200x600") %>
+      </div>
+    </div>
+  </div>
 </div>

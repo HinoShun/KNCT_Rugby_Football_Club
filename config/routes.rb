@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'pages/articles'
   get 'pages/result'
   get 'pages/member'
+  get 'pages/news_letter'
 end
