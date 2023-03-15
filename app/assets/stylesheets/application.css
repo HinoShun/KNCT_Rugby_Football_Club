@@ -1,5 +1,7 @@
 /******* リセット *******/
 
+
+
 /******* ヘッダー装飾 *******/
 
 .header{}
@@ -211,4 +213,41 @@ footer{
 
 .link{
   color: darkgreen;
+}
+
+/******* letter装飾 *******/
+
+.letters{
+  height: 1800px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.letter{
+  height: 350px;
+  width: 250px;
+  border-radius: 5px;
+  background: radial-gradient(rgb(194, 238, 192), rgb(31, 116, 39));
+  padding: 20px;
+  margin: 120px auto;
+}
+
+.cover{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.letter_bottom{
+  background-color: white;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.year{
+  display: block;
+  text-align: center;
+  margin-top: 5px;
 }
