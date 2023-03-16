@@ -14,6 +14,7 @@ class PagesController < ApplicationController
 
   def news_letter
   end
+  
 
   def basic
     authenticate_or_request_with_http_basic do |name, password|
