@@ -14,6 +14,7 @@
 
   <div class="comment-form">
     <%= form_with(model: [@article, @comment], local: true) do |f|%>
+    <%= render 'shared/error_messages', model:@comment %>
      <div class="">
       <%= f.label :graduating_class, "卒業期" %><br />
       <%= f.text_field :graduating_class, id:"" %>
