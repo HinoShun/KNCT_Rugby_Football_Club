@@ -1,0 +1,23 @@
+<%= form_with  model: @order, id: 'charge-form', class: 'card-form',local: true do |f| %>
+  <div class='form-wrap'>
+    <%= f.label :name, "お名前" %>
+    <%= f.text_field :name, class:"price", placeholder:"例)10000" %>
+  </div>
+
+  <div class='form-wrap'>
+    <%= f.label :email, "メールアドレス" %>
+    <%= f.text_field :email, class:"price", placeholder:"例)10000" %>
+  </div>
+
+  <div class='form-wrap'>
+    <%= f.label :email_confirmation, "メールアドレス（確認用）" %>
+    <%= f.text_field :email_confirmation, class:"price", placeholder:"例)10000" %>
+  </div>
+
+  <div class='form-wrap'>
+    <%= f.label :price, "金額" %>
+    <%= f.text_field :price, class:"price", placeholder:"例)10000" %>
+  </div>
+
+  <%= f.submit "お支払い", class:"button", id: "button" %>
+<% end %>
