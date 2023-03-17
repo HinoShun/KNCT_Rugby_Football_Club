@@ -22,7 +22,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:name, :email, :email_confirmation, :price).merge(token: params[:token])
+    params.require(:order).permit(:name, :email, :price).merge(token: params[:token])
   end
 
 end

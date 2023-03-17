@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 2023_03_17_091754) do
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
-    t.string "email_confirmation", null: false
     t.text "content", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -65,7 +64,6 @@ ActiveRecord::Schema.define(version: 2023_03_17_091754) do
     t.string "name", null: false
     t.integer "price", null: false
     t.string "email", null: false
-    t.string "email_confirmation", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
