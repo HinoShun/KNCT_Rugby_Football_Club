@@ -15,9 +15,25 @@
   </div>
 
   <div class='form-wrap'>
+    <p>カード番号</p>
+    <div id="number-form" class="input-default"></div>
+  </div>
+
+  <div class='form-wrap'>
+    <p>期限</p>
+    <div id="expiry-form" class="input-default"></div>
+  </div>
+    
+  <div class='form-wrap'>
+    <p>カード背面4桁もしくは3桁の番号</p>
+    <div id="cvc-form" class="input-default"></div>
+  </div>
+
+  <div class='form-wrap'>
     <%= f.label :price, "金額" %>
     <%= f.text_field :price, class:"price", placeholder:"例)10000" %>
   </div>
 
   <%= f.submit "お支払い", class:"button", id: "button" %>
+  
 <% end %>
