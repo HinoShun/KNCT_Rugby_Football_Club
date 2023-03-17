@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'pages/result'
   get 'pages/member'
   get 'pages/news_letter'
+  resources :contacts, only: [:new, :create] 
 end

@@ -1,0 +1,25 @@
+<%= form_with model: @contact, url: {controller: 'contacts', action: 'create'}, local: true do |f|%>
+  <div class="">
+    <%= f.label :name, "お名前" %>
+    <%= f.text_field :name, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.label :email, "メールアドレス" %>
+    <%= f.text_field:email, class: :form__text, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.label :email_confirmation, "メールアドレス（確認用）" %>
+    <%= f.text_field :email_confirmation, class: :form__text, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.label :content, "内容" %>
+    <%= f.text_area :content, class: :form__text, id:"" %>
+  </div>
+
+  <div class="">
+    <%= f.submit "送信する", class: :form__btn  %>
+  </div>
+<% end %>
