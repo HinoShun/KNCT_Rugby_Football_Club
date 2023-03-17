@@ -7,6 +7,4 @@ class Order < ApplicationRecord
     validates :email_confirmation
   end
 
-  validates :email, confirmation: true
-
 end

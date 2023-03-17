@@ -7,6 +7,4 @@ class Contact < ApplicationRecord
     validates :content
   end
 
-  validates :email, confirmation: true
-
 end
