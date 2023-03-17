@@ -1,4 +1,12 @@
 class Contact < ApplicationRecord
-  validates :name, presence: true
-  validates :content, presence: true
+
+  with_options presence: true do
+    validates :name
+    validates :email
+    validates :email_confirmation
+    validates :content
+  end
+
+  validates :email, confirmation: true
+
 end
