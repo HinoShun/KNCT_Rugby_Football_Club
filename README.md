@@ -40,3 +40,21 @@
 ### Association
 
 - belongs_to :article
+
+
+## contacts テーブル
+
+| Column  | Type    | Options     |
+| ------- | --------| ----------- |
+| name    | string  | null: false |
+| email   | string  | null: false |
+| content | text    | null: false |
+
+
+## orders テーブル
+
+| Column | Type    | Options     |
+| ------ | --------| ----------- |
+| name   | string  | null: false |
+| price  | integer | null: false |
+| email  | string  | null: false |
