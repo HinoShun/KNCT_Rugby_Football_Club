@@ -295,6 +295,30 @@ footer{
   font-size: 15px;
 }
 
+.form_name_contact{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form_name_contact input{
+  line-height: 30px;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.form_email_contact{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form_email_contact input{
+  line-height: 30px;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+}
+
 .form_content{
   margin-bottom: 20px;
   text-align: center;

@@ -7,12 +7,13 @@
       <div class="form">
 
         <%= form_with model: @article, id: 'new_post', local: true do |f|%>
+
           <div class="form_title">
-            <%= f.text_field :title, placeholder: "タイトル", id:""  %>
+            <%= f.text_field :title, placeholder: "  タイトル", id:""  %>
           </div>
 
           <div class="form_content">
-            <%= f.text_area :content, placeholder: "投稿内容", id:"" %>
+            <%= f.text_area :content, placeholder: "  投稿内容", id:"" %>
           </div>
 
           <div class="preview_area", id = "previews" ></div>
@@ -24,6 +25,7 @@
           <div class="form_submit">
             <%= f.submit "投稿する", class: :form_btn  %>
           </div>
+
         <% end %>
 
       </div>
