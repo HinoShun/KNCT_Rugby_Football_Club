@@ -205,8 +205,6 @@ footer{
 }
 
 /******* article_show装飾 *******/
-.article_show{
-}
 
 .article_show_area{
   height: 560px;
@@ -250,6 +248,11 @@ footer{
   color: darkred;
   border-radius: 3px;
   border: 1px solid gray;
+}
+
+.comment{
+  text-align: center;
+  font-size: small;
 }
 
 .comments{

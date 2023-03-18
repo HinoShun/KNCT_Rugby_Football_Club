@@ -1,0 +1,37 @@
+<div class="main_">
+
+  <div class="contents">
+
+    <div class="new_article">
+
+      <div class="form">
+
+        <%= form_with model: @article, url: {controller: 'articles', action: 'update'}, local: true do |f|%>
+
+          <div class="form_title">
+            <%= f.text_field :title, placeholder: "  タイトル", id:""  %>
+          </div>
+
+          <div class="form_content">
+            <%= f.text_area :content, placeholder: "  投稿内容", id:"" %>
+          </div>
+
+          <div class="preview_area", id = "previews" ></div>
+
+          <div class="form_image">
+            <%= f.file_field :image, placeholder: "画像", id:""  %>
+          </div>
+
+          <div class="form_submit">
+            <%= f.submit "編集する", class: :form_btn  %>
+          </div>
+
+        <% end %>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
