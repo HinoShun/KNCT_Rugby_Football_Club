@@ -7,6 +7,4 @@ class Comment < ApplicationRecord
     validates :message
   end
 
-  validates :graduating_class, numericality: { only_integer: true, message: "半角数字で入力してください" }
-
 end
