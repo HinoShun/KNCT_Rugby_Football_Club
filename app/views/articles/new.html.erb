@@ -16,11 +16,11 @@
             <%= f.text_area :content, placeholder: "  投稿内容", id:"" %>
           </div>
 
-          <div class="preview_area", id = "previews" ></div>
-
           <div class="form_image">
             <%= f.file_field :image, placeholder: "画像", id:""  %>
           </div>
+
+          <div class="preview_area", id = "previews" ></div>
 
           <div class="form_submit">
             <%= f.submit "投稿する", class: :form_btn  %>
