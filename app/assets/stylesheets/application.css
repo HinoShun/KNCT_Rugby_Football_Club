@@ -7,8 +7,6 @@
 
 /******* ヘッダー装飾 *******/
 
-.header{}
-
 .upper{
   height: 100px;
   width: 100vw;
@@ -18,9 +16,6 @@
   background-color: darkgreen;
   border-bottom: solid 2px red;
   background: linear-gradient(-225deg, darkgreen 0%, white 95%);
-}
-
-.header_left{
 }
 
 .title{
@@ -40,9 +35,6 @@
   color: antiquewhite;
   margin-left: 15px;
   text-shadow: 1px 1px 2px silver;
-}
-
-.header_right{
 }
 
 .header_buttons{
@@ -163,6 +155,11 @@ footer{
 
 /******* article_index装飾 *******/
 
+.index_page{
+  margin: 0 auto 0 80px;
+  padding-top: 50px;
+}
+
 .articles{
   width: 100%;
   display: flex;
@@ -182,7 +179,7 @@ footer{
   width: 100%;
   display: block;
   object-fit: contain;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .article_title{
@@ -388,9 +385,6 @@ footer{
 .club_dues{
   justify-content: center;
   padding: 100px;
-}
-
-.card-form{
 }
 
 .order_input{

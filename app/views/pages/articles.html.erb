@@ -1,9 +1,15 @@
 <div class="main_">
 
   <div class="contents">
+
+    <div class="page">
     
-    <div class="articles">
-      <%= render partial: "articles/article", collection: @articles  %>
+      <div class="page_title">記事一覧</div>
+        
+      <div class="articles">
+        <%= render partial: "articles/article", collection: @articles  %>
+      </div>
+    
     </div>
   
   </div>

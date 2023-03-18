@@ -2,14 +2,22 @@
 
   <div class="contents">
 
-    <div class="articles">
-      <%= render partial: "article", collection: @articles  %>
-    </div>
+      <div class="page_title">
+        <div class="index_page">
+          最新の記事
+        </div>
+      </div>
+      
+      <div class="articles">
+        <%= render partial: "article", collection: @articles  %>
+      </div>
 
       <%= render 'pages/result' %>
 
       <%= render 'pages/member' %>
 
+    </div>
+  
   </div>
 
 </div>
