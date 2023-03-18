@@ -1,6 +1,8 @@
-
-  <%= comment.graduating_class %>
-  <%= comment.name %>
+<div class="comments">
+  <%= comment.graduating_class %>期:
+  <%= comment.name %>/
   <%= comment.message %>
-  <%= link_to "削除する", article_comment_path(@article,comment), method: :delete, class: :delete_btn %>
-
+  <% if user_signed_in? %>
+    : <%= link_to "削除する", article_comment_path(@article,comment), method: :delete, class: :master_operation_btn %>
+  <% end %>
+</div>

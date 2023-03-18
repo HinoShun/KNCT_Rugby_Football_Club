@@ -1,36 +1,62 @@
+<div class="main_">
 
-  <%= image_tag(@article.image) %>
-  <%= @article.title %>
-  <%= @article.content %>
+  <div class="contents">
 
-  <% if user_signed_in? && current_user.id == @article.user_id %>
-    <div class="">
-      <%= link_to "編集する", "#" %>
-      <%= link_to "削除する", "#" %>
+    <div class="article_show">
+
+      <div class="article_show_area">
+
+          <div class="article_image_area">
+            <%= image_tag(@article.image,class: 'article_show_image') %>
+          </div>
+
+          <div class="article_title_show">
+            <%= @article.title %>
+          </div>
+
+          <div class="article_content_show">
+            <%= @article.content %>
+          </div>
+
+        <% if user_signed_in? && current_user.id == @article.user_id %>
+        <div class="master_operation">
+          <%= link_to "編集する", "#", class: :master_operation_btn %>
+          <%= link_to "削除する", "#", class: :master_operation_btn %>
+        </div>
+        <% end %>
+
+      </div>
+
     </div>
-  <% end %>
 
-  <%= render partial: "articles/comment", collection: @comments  %>
+  </div>
 
-  <div class="comment-form">
-    <%= form_with(model: [@article, @comment], local: true) do |f|%>
-    <%= render 'shared/error_messages', model:@comment %>
-     <div class="">
-      <%= f.label :graduating_class, "卒業期" %><br />
-      <%= f.text_field :graduating_class, id:"" %>
-    </div>
+    <%= render partial: "articles/comment", collection: @comments  %>
 
-    <div class="">
-      <%= f.label :name, "お名前" %><br />
-      <%= f.text_field :name, id:"" %>
-    </div>
+      <div class="form">
 
-    <div class="">
-      <%= f.label :message, "コメント内容" %><br />
-      <%= f.text_area :message, id:"" %>
-    </div>
+        <%= form_with(model: [@article, @comment], local: true) do |f|%>
+            
+          <%= render 'shared/error_messages', model:@comment %>
 
-    <div class="">
-      <%= f.submit "コメントする" %>
-    </div>
-  <% end %>
+          <div class="form_graduate">
+            <%= f.text_field :graduating_class, placeholder: "  卒業期" %>
+          </div>
+
+          <div class="form_name">
+            <%= f.text_field :name, placeholder: "  お名前" %>
+          </div>
+
+          <div class="form_content">
+            <%= f.text_area :message, placeholder: "  コメント内容" %>
+          </div>
+
+          <div class="form_submit">
+            <%= f.submit "コメントする", class: :form_btn   %>
+          </div>
+
+        <% end %>
+
+      </div>
+
+</div>

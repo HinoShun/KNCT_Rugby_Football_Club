@@ -179,7 +179,7 @@ footer{
   width: 100%;
   display: block;
   object-fit: contain;
-  margin-top: 40px;
+  margin: 15px 0;
 }
 
 .article_title{
@@ -203,6 +203,60 @@ footer{
 .delete_btn{
   color: #e8efe6;
 }
+
+/******* article_show装飾 *******/
+.article_show{
+}
+
+.article_show_area{
+  height: 560px;
+  width: 600px;
+  margin: 0 auto ;
+  padding-top: 80px;
+}
+
+.article_image_area{
+  height: px;
+  width: 600px;
+  text-align: center;
+}
+
+.article_show_image{
+  height: 400px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.article_title_show{
+  width: 100%;
+  font-size: large;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.article_content_show{
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.master_operation{
+  text-align: center;
+}
+
+.master_operation_btn{
+  padding: 7px;
+  color: darkred;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.comments{
+  margin: 13px;
+  text-align: center;
+}
+
 
 /******* result装飾 *******/
 
@@ -286,6 +340,18 @@ footer{
 }
 
 .form_title input {
+  line-height: 30px;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.form_graduate{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form_graduate input{
   line-height: 30px;
   width: 400px;
   height: 40px;
