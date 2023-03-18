@@ -8,11 +8,11 @@
 
         <%= form_with model: @contact, url: {controller: 'contacts', action: 'create'}, local: true do |f|%>
 
-          <div class="form_name_contact">
+          <div class="form_name">
             <%= f.text_field :name, placeholder:"  お名前" %>
           </div>
 
-          <div class="form_email_contact">
+          <div class="form_email">
             <%= f.text_field :email, placeholder:"  メールアドレス" %>
           </div>
 
