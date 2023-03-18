@@ -1,5 +1,8 @@
 /******* リセット *******/
-
+*{
+  padding: 0;
+  margin: 0;
+}
 
 
 /******* ヘッダー装飾 *******/
@@ -36,6 +39,7 @@
   font-size: 40px;
   color: antiquewhite;
   margin-left: 15px;
+  text-shadow: 1px 1px 2px silver;
 }
 
 .header_right{
@@ -78,8 +82,9 @@
   border-radius: 5px;
   background-color: #e8efe6;
   display: block;
-  width: 120px;
+  width: 100px;
   margin: auto 3px;
+  font-size: small;
 }
 
 a{
@@ -139,6 +144,7 @@ footer{
 .page_title{
   font-size: large;
   font-weight: 600;
+  text-shadow: 1px 1px 2px silver;
 }
 
 .page_contents{
@@ -162,12 +168,13 @@ footer{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .article{
   height: 300px;
   width: 400px;
+  margin-bottom: 60px;
 }
 
 .article_image{
@@ -183,7 +190,7 @@ footer{
   text-align: center;
   font-size: large;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .article_posted{
@@ -202,8 +209,6 @@ footer{
 
 /******* result装飾 *******/
 
-
-
 /******* member装飾 *******/
 .staff{
   line-height:20px;
@@ -211,9 +216,12 @@ footer{
 
 .song{
   display: block;
+  height: 470px;
+  width: 1000px;
   object-fit: cover;
   filter: contrast(200%);
-  border-radius: 10px;
+  border-left: solid 2px rgb(224, 90, 135);
+  border-right: solid 2px rgb(224, 90, 135);
 }
 
 .info{
@@ -221,7 +229,9 @@ footer{
 }
 
 .link{
-  color: darkgreen;
+  color: rgb(0, 100, 73);
+  font-weight: 700;
+  text-shadow: 1px 1px 2px silver;
 }
 
 /******* letter装飾 *******/
@@ -258,4 +268,77 @@ footer{
   display: block;
   text-align: center;
   margin-top: 5px;
+}
+
+/******* 記事投稿装飾 *******/
+.new_article{
+  height: 1000px;
+}
+
+.form{
+  height: 600px;
+  width: 600px;
+  padding: 60px 0;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.form_title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form_title input {
+  line-height: 30px;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.form_content{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form_content textarea {
+  width: 400px;
+  height: 120px;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.preview_area{
+  height: 300px;
+  width: 400px;
+  border-radius: 2px;
+  border: 1px solid gray;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.preview-size{
+  height: 300px;
+  width: 400px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.form_image{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form_submit{
+  height: 36px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form_btn{
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: darkgreen;
+  color: #e8efe6;
 }

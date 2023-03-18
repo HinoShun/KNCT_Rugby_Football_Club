@@ -1,22 +1,35 @@
-<h1>記事投稿画面</h1>
+<div class="main_">
 
-<%= form_with model: @article, local: true do |f|%>
-  <div class="">
-    <%= f.label :title, "タイトル" %>
-    <%= f.text_field :title, id:"" %>
+  <div class="contents">
+
+    <div class="new_article">
+
+      <div class="form">
+
+        <%= form_with model: @article, id: 'new_post', local: true do |f|%>
+          <div class="form_title">
+            <%= f.text_field :title, placeholder: "タイトル", id:""  %>
+          </div>
+
+          <div class="form_content">
+            <%= f.text_area :content, placeholder: "投稿内容", id:"" %>
+          </div>
+
+          <div class="preview_area", id = "previews" ></div>
+
+          <div class="form_image">
+            <%= f.file_field :image, placeholder: "画像", id:""  %>
+          </div>
+
+          <div class="form_submit">
+            <%= f.submit "投稿する", class: :form_btn  %>
+          </div>
+        <% end %>
+
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="">
-    <%= f.label :content, "記事内容" %>
-    <%= f.text_area :content, class: :form__text, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :image, "記事写真" %>
-    <%= f.file_field :image, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.submit "投稿する", class: :form__btn  %>
-  </div>
-<% end %>
+</div>
