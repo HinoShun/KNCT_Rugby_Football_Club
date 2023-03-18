@@ -6,6 +6,12 @@
 
 
 /******* ヘッダー装飾 *******/
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
 
 .upper{
   height: 100px;
@@ -106,6 +112,7 @@ footer{
 /******* メイン装飾 *******/
 
 .main{
+  margin-top: 150px;
   height: 1950px;
   width: 100vw;
   background-image: url('ground_vertical.png');
