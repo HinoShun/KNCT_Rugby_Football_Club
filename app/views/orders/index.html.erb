@@ -1,34 +1,56 @@
-<%= form_with  model: @order, id: 'charge-form', class: 'card-form',local: true do |f| %>
-  <div class='form-wrap'>
-    <%= f.label :name, "お名前" %>
-    <%= f.text_field :name, class:"price", placeholder:"例)10000" %>
-  </div>
+<div class="main_">
 
-  <div class='form-wrap'>
-    <%= f.label :email, "メールアドレス" %>
-    <%= f.text_field :email, class:"price", placeholder:"例)10000" %>
-  </div>
+  <div class="contents">
 
-  <div class='form-wrap'>
-    <p>カード番号</p>
-    <div id="number-form" class="input-default"></div>
-  </div>
+    <div class="club_dues">
+      
 
-  <div class='form-wrap'>
-    <p>期限</p>
-    <div id="expiry-form" class="input-default"></div>
-  </div>
+      <%= form_with  model: @order, id: 'charge-form', class: 'card-form',local: true do |f| %>
+        
+        <div class="order_form">
+          <div class="link">部費のお支払い</div>
+
+          <div class='order_input'>
+            <%= f.text_field :name, class:"form_name", placeholder:"お名前" %>
+          </div>
+
+          <div class='order_input'>
+            <%= f.text_field :email, class:"form_email", placeholder:"メールアドレス" %>
+          </div>
+
+          <div class="card_input">
+
+            <div class='form-wrap'>
+              <p class="card_form_label">カード番号</p>
+              <div id="number-form" class="input-default"></div>
+            </div>
+
+            <div class='form-wrap'>
+              <p class="card_form_label">期限</p>
+              <div id="expiry-form" class="input-default"></div>
+            </div>
     
-  <div class='form-wrap'>
-    <p>カード背面4桁もしくは3桁の番号</p>
-    <div id="cvc-form" class="input-default"></div>
+            <div class='form-wrap'>
+              <p class="card_form_label">カード背面4桁もしくは3桁の番号</p>
+              <div id="cvc-form" class="input-default"></div>
+            </div>
+
+          </div>
+
+          <div class='order_input'>
+            <%= f.text_field :price, class:"form_price", placeholder:"金額　例)10000" %>
+          </div>
+
+          <div class='form_submit'>
+            <%= f.submit "お支払い", class:"form_btn", id: "button" %>
+          </div>
+
+        </div>
+
+      <% end %>
+
+    </div>
+
   </div>
 
-  <div class='form-wrap'>
-    <%= f.label :price, "金額" %>
-    <%= f.text_field :price, class:"price", placeholder:"例)10000" %>
-  </div>
-
-  <%= f.submit "お支払い", class:"button", id: "button" %>
-  
-<% end %>
+</div>

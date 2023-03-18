@@ -342,3 +342,68 @@ footer{
   background-color: darkgreen;
   color: #e8efe6;
 }
+
+
+/******* カード決済装飾 *******/
+.club_dues{
+  justify-content: center;
+  padding: 100px;
+}
+
+.card-form{
+}
+
+.order_input{
+  display: flex;
+  justify-content: center;
+}
+
+.order_form{
+  height: 600px;
+  width: 600px;
+  padding: 0 auto;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.form_name{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.form_email{
+  margin-bottom: 20px;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.card_input{
+  height: 240px;
+  padding: 30px 100px;
+}
+
+.input-default{
+  margin-bottom: 20px;
+  border-radius: 2px;
+  border: solid 1px gray;
+  height: 40px;
+}
+
+.form_price{
+  margin-bottom: 20px;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.card_form_label{
+  font-size: 12px;
+}
+
