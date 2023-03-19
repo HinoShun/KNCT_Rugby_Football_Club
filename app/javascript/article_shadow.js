@@ -1,5 +1,4 @@
 window.addEventListener('load', function(){	
-  //記事が画像で影
   const articles = document.querySelectorAll(".article_image");	
   articles.forEach(function(article) {	
     article.addEventListener('mouseover', function() {	
